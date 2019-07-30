@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<title>Pull to refresh</title>
+  	<meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  	<style>
+  	html,
+  	body {
+  		height: 100%;
+  	}
+  	.ptr--ptr {
+  		position: fixed;
+  		left: 0;
+  		right: 0;
+	    box-shadow: none !important;
+	}
+  	.ptr--text {
+  		display: none;
+  	}
+  	</style>
+</head>
+<body>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+	<p>Pull down to refresh</p>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.17/index.umd.min.js" integrity="sha256-6NhrXn8/eK6faZeJFEI2DxqcPh16lJ1wxVDyjjLF2mg=" crossorigin="anonymous"></script>
+
+	<script>
+	const ptr = PullToRefresh.init({
+	  	mainElement: 'body',
+	  	onRefresh() {
+	    	alert('refresh');
+	  	},
+	  	iconArrow: '<img src="https://1tv.ge/app/themes/wi-theme/resources/assets/img/loader.svg" />',
+	  	iconRefreshing: '<img src="https://1tv.ge/app/themes/wi-theme/resources/assets/img/loader.svg" />',
+	  	instructionsPullToRefresh: ' ',
+	  	instructionsReleaseToRefresh: ' ',
+	  	instructionsRefreshing: ' '
+	});
+	</script>
+</body>
+</html>
