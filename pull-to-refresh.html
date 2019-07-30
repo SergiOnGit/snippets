@@ -72,13 +72,16 @@
 	const ptr = PullToRefresh.init({
 	  	mainElement: 'body',
 	  	onRefresh() {
-	    	alert('refresh');
+	    	window.location.reload();
 	  	},
 	  	iconArrow: '<img src="https://1tv.ge/app/themes/wi-theme/resources/assets/img/loader.svg" />',
 	  	iconRefreshing: '<img src="https://1tv.ge/app/themes/wi-theme/resources/assets/img/loader.svg" />',
 	  	instructionsPullToRefresh: ' ',
 	  	instructionsReleaseToRefresh: ' ',
-	  	instructionsRefreshing: ' '
+	  	instructionsRefreshing: ' ',
+	  	shouldPullToRefresh: function() {
+          	return !window.scrollY;
+        },
 	});
 	</script>
 </body>
