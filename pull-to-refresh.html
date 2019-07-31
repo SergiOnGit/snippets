@@ -11,17 +11,18 @@
   		height: 100%;
   	}
   	.ptr--ptr {
-  		position: fixed;
-  		left: 0;
-  		right: 0;
+		position: fixed;
+		left: 0;
+		right: 0;
 	    box-shadow: none !important;
 	}
-  	.ptr--text {
-  		display: none;
-  	}
-  	.pulltr-spinner {
-  		height: 40px;
-  	}
+	.ptr--text {
+		display: none;
+	}
+	.ptr--icon {
+		font-size: 50px;
+	    color: #e6003c !important;
+	}
   	</style>
 </head>
 <body>
@@ -77,8 +78,8 @@
 	  	onRefresh() {
 	    	window.location.reload();
 	  	},
-	  	iconArrow: '<img src="https://1tv.ge/app/themes/wi-theme/resources/assets/img/loader.svg" />',
-	  	iconRefreshing: '<img class="pulltr-spinner" src="https://1tv.ge/app/themes/wi-theme/resources/assets/img/loader.svg" />',
+	  	iconArrow: '&#8675;',
+	  	iconRefreshing: '&hellip;',
 	  	instructionsPullToRefresh: ' ',
 	  	instructionsReleaseToRefresh: ' ',
 	  	instructionsRefreshing: ' ',
